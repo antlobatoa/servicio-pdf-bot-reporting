@@ -25,6 +25,8 @@ node servidor.js
 
 ## Render
 
-- Build Command: `npm install`
+- Build Command: `npm install && npx puppeteer browsers install chrome` (sin la descarga explícita de Chrome, `/pdf` responde 500 "Could not find Chrome")
 - Start Command: `node servidor.js`
 - Environment: `CLAVE_SERVICIO`
+
+Nota (plan gratuito): el servicio se duerme tras unos 15 minutos sin uso y el primer PDF tarda entre 30 y 60 segundos. Un primer intento puede fallar con 500; reintentar.
